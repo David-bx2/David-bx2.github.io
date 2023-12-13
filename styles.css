@@ -4,6 +4,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 18;
     text-decoration: none;
+    margin: 0px 1% 1% 1%;
 }
 
 a{
@@ -13,4 +14,40 @@ a{
 
 a:hover{
     color: orangered;
+}
+
+section{
+    display: flex;
+    width: 600 px;
+    height: 430px;
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.full-image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.full-image-modal img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
 }
