@@ -1,5 +1,16 @@
 body{
-    background-color: blue;
+    background-color: rgb(19, 0, 70);
     color: white;
     font-family: 'Roboto', sans-serif;
+    font-size: 18;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: orangered;
 }
