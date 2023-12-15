@@ -4,7 +4,11 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-decoration: none;
-    margin: 0px 1% 1% 1%;
+    margin: 0px 1% 1% 1.5%;
+}
+
+h1{
+    margin: 1%;
 }
 
 .container-fluid{
@@ -113,17 +117,18 @@ section img:hover{
     width: 150px;
 }
 
-.education{
-    padding: 2%;
-}
 
 .education-entry{
     border: 1px solid white;
     padding: 2%;
     margin: 2%;
+    box-sizing: border-box; /* Hace que el padding no afecte el ancho total */
+    display: block; /* Hace que cada elemento sea un bloque en lugar de en línea */
+
 }
 
 .container {
+    padding: 2%;
     display: flex;
     justify-content: space-between;
 }
@@ -145,11 +150,28 @@ section img:hover{
 
 }
 
-.contact{
+.contact-entry{
+    border: 1px solid white;
     padding: 2%;
+    margin: 2%;
 }
 
-.contact-entry{
+.skills-entry {
+    border: 1px solid white;
+    padding: 2%;
+    margin: 2%;
+}
+
+.game-entry {
+    border: 1px solid white;
+    padding: 2%;
+    margin: 2%;
+}
+.experience-title{
+    margin-bottom: 10px;
+}
+
+.programming-entry {
     border: 1px solid white;
     padding: 2%;
     margin: 2%;
